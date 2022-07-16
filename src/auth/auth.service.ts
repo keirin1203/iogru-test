@@ -60,7 +60,7 @@ export class AuthService {
       username: username
     },{
       secret: process.env.SECRET_KEY,
-      expiresIn: '20s'
+      expiresIn: '15m'
     })
 
     const refreshToken = await this.jwtService.signAsync({
